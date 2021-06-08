@@ -1,15 +1,18 @@
-const yesBtn = document.querySelector('#yesBtn');
-
-yesBtn.addEventListener('click',function () {
-    alert('Siempre supe que aceptarias');
-});
-
-const noBtn = document.querySelector('#noBtn');
-
-noBtn.addEventListener('mouseover', function () {
-    const randomX = parseInt(Math.random()*100);
-    const randomY = parseInt(Math.random()*100);
-    noBtn.style.setProperty('top',randomY+'%');
-    noBtn.style.setProperty('left',randomX+'%');
-    noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
-})
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My little project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <p>¿Quieres ser mi UwU?</p>
+        <button id="yesBtn">Si&nbsp;</button>
+        <button id="noBtn">No</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
